@@ -10,13 +10,8 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
     port: 3000,
-    host: true,
-    allowedHosts: [
-      'fc81c2f7-3420-40d7-834e-567ca14254c0-00-2n7cz659ktyaa.picard.replit.dev',
-      'localhost',
-      '127.0.0.1'
-    ],
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
